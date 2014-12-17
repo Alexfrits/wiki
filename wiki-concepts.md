@@ -24,7 +24,9 @@
 ###Réseau de partage d'utilitaire (camionnettes, remorques…)
 
 #### Qui sont les Wikings?
-* Derrière une image rustre et barbare, les Wikings sont 
+* Derrière une image rustre et barbare, les Wikings sont des êtres cultivés et délicats. Leur civilasation s'étendait sur tout le monde occidental. De la pointe de la Norvège à la Sicile, et même jusqu'aux Amériques, ils avaient des comptoirs commerciaux dans tout les ports. S'il n'y avait pas de port, ils en créaient un. Que ce soit de butin ou de denrées, leurs drakkars voyageaient toujours rempli. les liens qu'ils ont créés avec les peuples voisins ont bénéficié aux deux parties.
+####Devenir Wiking
+* Aujourd'hui, nous vous offrons l'opportunité de faire vivre cet héritage
 * Vous avez une camionnette, une remorque, un break, un bakfiets qui est vide la plupart du temps?
 * Devenez un Wiking et donnez un coup de main à ceux qui en ont besoin!
 
@@ -34,21 +36,21 @@
 * on vous demande le double du prix de votre nouvelle machine à laver pour la livraison à domicile?
 
 #### La philosophie Wiking
-* Les Wikings sont vos voisins: Indiquez votre lieu de 
+* Les Wikings sont vos voisins: Indiquez votre lieu de départ et d'arrivée et les Wikings du quartiers seront mobilisés
 * les Wikings s'arrangent à l'amiable: convenez entre vous et à l'avance du dédomagement; défraiement, service, 
 
 ##### inscription
 
 ###### Vous avez un transport à mettre à disposition
- 	* mail
-	* pw
-	*	nom
-	* prénom
-	* adresse (définira la position de base)
-	* tél (GSM)
-	*	trajets habituels avec le transport mis à disposition (école-travail…)
-	* possibilité de renseigner plusieurs transports avec plusieurs trajets =/=
-	* pas de transport supprime les deux dernières options (possibilité d'éditer son profil après pour add/suppr transports)
+* mail
+* pw
+* nom
+* prénom
+* adresse (définira la position de base)
+* tél (GSM)
+* trajets habituels avec le transport mis à disposition (école-travail…)
+* possibilité de renseigner plusieurs transports avec plusieurs trajets =/=
+* pas de transport supprime les deux dernières options (possibilité d'éditer son profil après pour add/suppr transports)
 
 
 
@@ -56,10 +58,11 @@
 
 1. connection au site
 
-2. remplissage formulaire * quoi? (liste + "autre" spécifier poids-volume)
-													* de où?
-													* à où?
-													* quand?
+2. remplissage formulaire
+	* quoi? (liste + "autre" spécifier poids-volume)
+	* de où?
+	* à où?
+	* quand?
 
 3. Le site effectue une recherche dans la DB et sort les résultats (seulmt un chiffre)
 
