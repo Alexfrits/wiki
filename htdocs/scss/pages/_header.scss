@@ -1,0 +1,44 @@
+.header--home,
+.header--normal {
+		h1 {
+		position: absolute;
+		top: 2vh;
+		left: 0;
+
+		strong {
+		 display: none;
+		}
+		small {
+		position: absolute;
+		bottom: 2rem;
+		left: 0;
+		padding-left: 1rem;
+		}
+	}
+}
+
+
+.header--home {
+	nav {
+		position: absolute;
+		top: 20vh;
+		left: 0;
+	}
+}
+
+
+.header--normal {
+	position: relative;
+	height: 20rem;
+	margin-bottom: 8rem;
+	background:url(../img/4976537690_d5f5df3174_o.jpg) no-repeat 0 0;
+	background-size: cover;
+
+
+	nav {
+		position: absolute;
+		top: 20vh;
+		left: 0;
+	}
+}
+
