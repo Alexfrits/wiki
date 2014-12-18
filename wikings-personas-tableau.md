@@ -1,13 +1,14 @@
+
 Résumé
 ==
 
-nom		|	Thomas	|	Georges	|	Rita
-:----:|:-------:|:-------:|:---:
-âge		|			26			|			47			|	33
-rôle	|				té					|		teur			|	teur
-matos	|	10chaises+3tables | idem		| plante verte
-étapes|							|							|
-1			|				SE*			|							|
+nom		|			Thomas				|				Georges			|	Rita
+:----:|:-----------------:|:-----------------:|:---:
+âge		|					26				|					47				|	33
+rôle	|				té					|				teur				|	teur
+matos	|	10chaises+3tables | 			idem				| plante verte
+étapes|										|										|
+1			|					SE*				|										|
 2			|							|							|
 3			|							|							|
 4			|							|							|

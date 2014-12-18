@@ -9,11 +9,11 @@
 	* marchandise: 3 tables + 10 chaises
 
 2. scénario
-Thomas vient de commander trois nouvelles tables et dix chaises pour son café à bruxelles mais le magasin (trop petit) ne fait pas de livraison. personne autour de lui n'a de camionnette et en louer une revient trop cher. Il cherche donc une solution alernative. En cherchant location transport bruxelles sur Google. Dans les résultats s'affiche Wikings; le nom attire son attention et la lecture de la baseline correspond à ce qu'il attend.
+Thomas vient de commander trois nouvelles tables et dix chaises pour son café à bruxelles mais le magasin (trop petit) ne fait pas de livraison. personne autour de lui n'a de camionnette et en louer une revient trop cher. Il cherche donc une solution alernative en tapant *"location transport bruxelles"* sur Google. Dans les résultats s'affiche Wikings; le nom attire son attention et la lecture de la description.
 	1. il clique et arrive sur la homepage où le module de recherche est en grand
-	2. il remplit les champs taille, départ, arrivée et les résultats apparaissent (version publique: prénom et type de transport)
+	2. il remplit les champs taille, départ, arrivée et les résultats apparaissent (version publique courte)
 	3. il clique sur "Georges" et un popup s'affiche en avant plan "pour prendre contact avec Georges, inscrivez-vous"
-	4. il obtempère et crée son compte
+	4. il accepte et crée son compte
 	5. le popup disparait et il arrive sur le profil de Georges où il voit
 		* son nom
 		* son moyen de transport
@@ -23,7 +23,7 @@ Thomas vient de commander trois nouvelles tables et dix chaises pour son café �
 	7. un peu plus tard, il reçoit un message disant que Georges a accepté et le message demande de compléter -la date et heure, l'adresse de départ et d'arrivée
 	8. Georges reçoit les détails supplémentaires et peut confirmer ou infirmer la mise à disposition. Il confirme [c'est ici que le site prélève une comm']
 	9. (ils effectuent le transport)
-10. après le transport effectué, thomas reçoit une notification lui demandant ce qu'il a pensé de Georges et peut côter sa prestation.
+	10. après le transport effectué, thomas reçoit une notification lui demandant ce qu'il a pensé de Georges et peut côter sa prestation.
 
 ##B) Georges
 
@@ -83,7 +83,11 @@ Il retrouve l'article, et tape l'adresse du site
 	4. [inscription]
 	5. arrive sur la page du premier, lit le rating et les comments-> lit plusieurs avant de faire un choix
 	6. retour aux résultats -> view all
-	7. arrivé sur la page de tous les résultats, il peut avoir un aperçu plus complet et un affichage simultané de tous les résultats avec possibilité de trier par distance - rating - type de payement
+	7. arrivé sur la page de tous les résultats, il peut avoir un aperçu plus complet et un affichage simultané de tous les résultats avec possibilité de trier par : distance - rating - type de payement
+	8. il décide d'envoyer un message à Claude -> quelques jours après: réponse négative
+	9. le message qui dit que Claude à répondu négativement lui suggère d'autres personnes qui correspondent à sa recherche initial
+	10. il choisit Kévin qui habite le village d'à côté -> OK -> OK
+	11. kévin lui prête sa remorque et veut même bien l'aider à pelleter en échange de quelques bières, et d'un partie de pétanque quand les beaux jours viendront
 
 
 
