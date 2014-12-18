@@ -1,0 +1,87 @@
+.hidden {
+	display:
+ none;
+	visibility: hidden;
+}
+
+h2 {
+	margin-bottom: 2rem;
+}
+
+
+/* SLIDER
+============================================================================*/
+
+.header__slider {
+	height: 100vh;
+margin-bottom: 5rem;
+
+	li{
+		background: url(../img/5138557764_bef8fcd1ea_o.jpg) no-repeat 50% 0;
+		background-size: cover;
+		height: 100%;
+	}
+}
+
+
+/*============================================================================
+MAIN SECTION 
+============================================================================*/
+
+main {
+
+
+ul {
+	width: 100%;
+}
+
+.main__item--home {
+	display: inline-block;
+	width: 100%;
+	height: 20%;
+	margin-bottom: 2rem;
+}
+
+	.product-img {
+		display: block;
+		width: 100%;
+		height: auto;
+
+		img {
+			width: 100%;
+			height: auto;
+		}
+	}
+}
+
+
+
+
+/*============================================================================
+FOOTER 
+============================================================================*/
+
+footer {
+	overflow: hidden;
+	li {
+		display: block;
+		width: 50%;
+		text-align: center;
+		float: left;
+		margin: 2rem auto;
+
+		&:last-child {
+			clear: both;
+			float: initial;
+		}
+	}
+}
+
+
+
+
+
+
+
+
+

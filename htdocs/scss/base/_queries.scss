@@ -1,0 +1,68 @@
+@media screen and (min-width: $small){
+
+}
+
+@media screen and (min-width:$medium){
+	main {
+		ul{
+			width: 80%;
+			margin: 0 auto;
+		}
+	}	
+}
+
+@media screen and (min-width:$large){
+
+	/* header */
+[class^="header"]{
+	nav {
+		position: initial;
+		top: initial;
+	}
+
+
+	.header__nav--main {
+		position: absolute;
+		bottom: 0;
+		right: 0;
+
+		li {
+			display: inline-block;
+		}
+	}
+}
+
+
+	/* main */
+	main {
+
+		ul {
+			width: 60%;
+		}
+	}
+}
+@media screen and (min-width:$xlarge){
+		main {
+			padding: 0 10% 4rem;
+
+		ul {
+			width: 100%;
+		}
+		.main__item--home {
+			width: 40%;
+			margin: 0 3% 2rem;
+		}
+	}
+
+}
+
+
+
+
+
+
+
+
+
+
+
