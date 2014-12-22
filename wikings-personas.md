@@ -86,7 +86,8 @@ Il retrouve l'article, et tape l'adresse du site
 	7. arrivé sur la page de tous les résultats, il peut avoir un aperçu plus complet et un affichage simultané de tous les résultats avec possibilité de trier par : distance - rating - type de payement
 	8. il décide d'envoyer un message à Claude -> quelques jours après: réponse négative
 	9. le message qui dit que Claude à répondu négativement lui suggère d'autres personnes qui correspondent à sa recherche initial
-	10. il choisit Kévin qui habite le village d'à côté -> OK -> OK
+	10. il choisit Kévin qui habite le village d'à côté -> msg1 OK -> msg2 OK
+	11. 
 	11. kévin lui prête sa remorque et veut même bien l'aider à pelleter en échange de quelques bières, et d'un partie de pétanque quand les beaux jours viendront
 
 
