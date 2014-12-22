@@ -69,7 +69,7 @@ De nature généreuse, elle est impliquée dans plusieurs associations locales (
 ##D) Francis
 
 1. infos
-	* 33 ans
+	* 38 ans
 	* pharmacien
 	* break
 	* sable/gravier
@@ -88,7 +88,19 @@ Il retrouve l'article, et tape l'adresse du site
 	9. le message qui dit que Claude à répondu négativement lui suggère d'autres personnes qui correspondent à sa recherche initial
 	10. il choisit Kévin qui habite le village d'à côté -> msg1 OK -> msg2 OK
 	11. 
-	11. kévin lui prête sa remorque et veut même bien l'aider à pelleter en échange de quelques bières, et d'un partie de pétanque quand les beaux jours viendront
+	11. kévin lui prête sa remorque et veut même bien l'aider à pelleter en échange de quelques bières, et d'un partie de pétanque quand les beaux jours viendront.
+
+
+##E) Simon
+
+1. infos
+	* 28 ans
+	* métier?
+	* Remorque moto 
+
+2. scénario
+
+Simon est passionné de sports moteurs et les dimanches, il participe à des courses de motocross rétro. C'est un hobby qui coûte assez cher (achat de pièces spéciales, outils…) et il souhaitait amortir sa remorque assez rapidement. Il l'a donc renseignée à louer sur tous les sites de petites annonces, mais aucun ne lui permet d'avoir une visibilité optimale. En plus, il est obligé de remonter son annonce régulièrement (manuellement ou en payant). Heureusement, il a découvert il y a quelques mois un nouveau site, Wikings, qui met en relation les gens qui ont besoin de transports de grande capacité, et ceux qui en disposent. Il a déjà prêté sa remorque à des gens de sa région, et a 
 
 
 

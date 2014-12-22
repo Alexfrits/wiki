@@ -100,6 +100,34 @@
 	* les acteurs s'arrangent entre eux
 
 
+#II. PERSONAS (voir annexe)
 
 
+#III. PROBLÈMES
+
+##A)
+1. Les gens ont déjà toutes les infos avant de se faire prélever leur cotisation pour la course. Ils peuvent ne pas valider et quand même faire la course
+
+	2. solution: les infos de contact directes (n° tél, mail, adresse précise) ne sont visibles qu'après avoir validé la seconde fois (et débitement de la provision).
+
+##B) S'ils jouent le jeu et qu'ils acceptent de se faire débiter, les "clients" peuvent leur poser un lapin. -> ils auront payé la cotisation pour rien.
+
+##C) Les "clients" ne voient pas les prix précis: cela peut en dissuader certains car il faut confirmer (et le prestataire se fait débiter) avant de pouvoir négocier un prix
+
+
+
+
+
+
+
+
+#IV. WIKINGS ALTERNATIF - jeu de rôle grandeur nature
+
+##A) Concept
+
+* Les gens qui ont besoin d'aide pour des tâches type déménagement, travaux… peuvent faire appel aux Wikings de leur quartier; un ou plusieurs selon le type de tâche.
+* Les clients proposent une rémunération en points-> une fois la tâche effectuée, les Wikings gagnent des points (à se partager s'ils sont plusieurs).
+* En plus de cela, ils peuvent se créer des clans (avec des amis, des Wikings rencontrés sur les lieux de déménagement…)
+* Ils peuvent gagner des points pour leur clan et ainsi devenir le meilleur clan Wiking.
+* Chaque jour/mois/semaine, des prix sont offerts aux meilleurs.
 
