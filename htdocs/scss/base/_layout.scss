@@ -1,80 +1,224 @@
-.hidden {
-	display:
- none;
-	visibility: hidden;
+
+body {
+  //background-color: $sec-color;
 }
 
 h2 {
-	margin-bottom: 2rem;
+  font-size: 3rem;
+  text-transform: uppercase;
+  margin-bottom: 1.5rem;
+}
+
+legend {
+  display: none;
+}
+
+a.inline-link {
+  color: $action-color; 
+}
+
+/*============================================================================
+INDEX 
+============================================================================*/
+
+/* HEADER
+============================================================================*/
+
+header {
+  position: relative;
+  padding: 4rem 0;
+  background-color: $main-color;
+  text-transform: uppercase;
+
+  h1 {
+    text-align: center;
+    max-width: 120px;
+    width: 100%;
+    height: auto;
+    margin: 0 auto 1rem;
+
+    a {
+        color: #fff;
+    }
+
+    img {
+      width: 100%;
+      height: auto;
+    }
+
+    strong {
+      display: block;
+    }
+  }
+
+  .buttons--signin {
+    width: 100%;
+
+  }
+
+}
+
+/* WIKING FINDER
+============================================================================*/
+
+.wiking-finder {
+  max-width: 54rem;
+  margin: 0 auto;
+}
+
+.form-search {
+  display: block;
+  position: relative;
+  margin-top: 3rem;
+  padding: 0 3rem 4rem;
+  background-color: $sec-color;
+
+  h2 {
+    margin: 0 -3rem 2rem;
+    padding: 2rem 3rem;
+    background-color: $main-color;
+    color: #fff;
+
+  }
+
+  .form-search__field {
+    display: inline-block;
+    width: 100%;
+    margin-bottom: 3rem;
+    padding: 2rem;
+    background-color: #fff;
+
+    input {
+      border: none;
+    }
+  }
+}
+
+.results--languettes {
+  margin: 0 auto;
+  transform: rotate(-90deg);
+  transform-origin: 40% 45%;
+  width: 200px;
+
+
+  .languette {
+    background-color: $sec-color;
+    display: block;
+    padding: 2rem;
+    width: 100%;
+  }
+}
+
+/* DEFINITION
+============================================================================*/
+
+.definition {
+  background-color: $main-color;
+  color: #fff;
+  padding: 2rem 3rem;
+  margin-bottom: 2rem;
+
+  p {
+
+    a {
+      color: $contr-color;
+    }
+  }
 }
 
 
-/* SLIDER
+/* ALL RESULTS
 ============================================================================*/
+.results--more {
 
-.header__slider {
-	height: 100vh;
-margin-bottom: 5rem;
+  .results_vignette {
+    position: relative;
+    padding: 2rem 2rem 5rem;
+    background-color: $sec-color;
+    margin-bottom: 2rem;
+  }
 
-	li{
-		background: url(../img/5138557764_bef8fcd1ea_o.jpg) no-repeat 50% 0;
-		background-size: cover;
-		height: 100%;
-	}
+  img {
+    width: 100%;
+    height: auto;
+    margin-bottom: 1rem;
+  }
 }
 
 
 /*============================================================================
-MAIN SECTION 
+SIGNUP PAGE 
 ============================================================================*/
 
-main {
 
+.form--signup {
+  padding: 2rem 2rem 5rem;
+  background-color: $sec-color;
+  max-width: 52rem;
+  margin: 0 auto;
 
-ul {
-	width: 100%;
+  .form--signup__field {
+    background-color: #fff;
+    padding: 2rem 1rem; 
+    margin-bottom: 2rem;
+    input {
+      border: none;
+    }
+  }
+
 }
-
-.main__item--home {
-	display: inline-block;
-	width: 100%;
-	height: 20%;
-	margin-bottom: 2rem;
-}
-
-	.product-img {
-		display: block;
-		width: 100%;
-		height: auto;
-
-		img {
-			width: 100%;
-			height: auto;
-		}
-	}
-}
-
-
 
 
 /*============================================================================
-FOOTER 
+MEMBER SEARCH 
 ============================================================================*/
 
-footer {
-	overflow: hidden;
-	li {
-		display: block;
-		width: 50%;
-		text-align: center;
-		float: left;
-		margin: 2rem auto;
 
-		&:last-child {
-			clear: both;
-			float: initial;
-		}
-	}
+.id-card {
+  text-align: center;
+  background-color: $sec-color;
+  padding: 2rem;
+  margin-bottom: 3rem;
+
+  img {
+    width: 40%;
+    height: auto;
+    margin-bottom: 2rem;
+  }
+}
+
+
+.vehicles {
+  margin-bottom: 3rem;
+
+  li {
+      display: inline-block;
+      width: 100%;
+      margin: 0 auto;
+    }
+
+  img {
+    width: 100%;
+    height: auto;
+  }
+}
+
+.comments {
+  padding: 0 1rem 1rem;
+  background-color: $sec-color;
+
+  .comments__post {
+    background-color: #fff;
+
+    img {
+      width: 20%;
+      height: auto;
+    }
+    p {
+      padding: 1rem;
+      padding-left: 20%;
+    }
+  }
 }
 
 

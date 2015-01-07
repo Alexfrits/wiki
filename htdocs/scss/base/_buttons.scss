@@ -1,0 +1,47 @@
+[class^=btn] {
+  display: block;
+  width: 40%;
+  position: absolute;
+  background-color: $action-color;
+  color: #fff;
+  text-align: center;
+	border: 0;
+
+
+
+	&[class$=inscription],
+	&[class$=connexion] {
+		position: initial;
+		padding: 1rem;
+	  font-size: 1.5rem;
+	  display: inline-block;
+	  width: 45%;
+	}
+
+	&[class$=connexion] {
+		color: $main-color;
+		background-color: $contr-color;
+	}
+
+	&[class$=find] {
+		padding: 1rem;
+	  bottom: 1rem;
+	  right: 3rem;
+	  width: 50%;
+	  max-width: 15rem;
+	}
+
+	&[class$=voir] {
+	  padding: 1rem;
+	  bottom: 1rem;
+	  right: 2rem;
+	  font-size: 1.4rem;
+	}
+
+	&[class$=signup] {
+		padding: 1rem;
+		width: 50%;
+		max-width: 30rem;
+		font-size: 1.4rem;
+	}
+}
