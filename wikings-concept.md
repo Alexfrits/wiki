@@ -50,7 +50,7 @@ Les Wikings sont une grande famille: ce qui commence par un échange de service 
 	* véhicule
 	* volume max transportable
 	* masse max transportable
-	* approvisionner son compte (min X euros)-> prélevable à chaque contrat (le fait que le transporteur doivent payer pour accepter une course le force à être présent et dispo)
+	* approvisionner son compte (min X euros)-> prélevable à chaque contrat (le fait que le transporteur doivent payer pour accepter une course le force à être présent et dispo). Si son compte arrive à 0, il n'apparaît plus dans la liste des résultats.
 	* possibilité de renseigner plusieurs transports
 	* pas de transport masque ces options (possibilité d'éditer son profil après pour add/suppr transports)
 
@@ -74,10 +74,13 @@ Les Wikings sont une grande famille: ce qui commence par un échange de service 
 
 6. envoi second message avec les dates et heures -> annonceur confirme (sinon : peut proposer autre date/heure)
 
-7. Une fois que les deux ont confirmé : annonceur débité + récupération des données de contact respectives
+7. Une fois que les deux ont confirmé : récupération des données de contact respectives
 	/!\ à partir de ce moment, le site n'est plus responsable de rien. Il se contente de mettre en contact les gens et prélève une commission pour ce service
 
-8. Après service rendu, le demandeur peut noter le Wiking (s'il ne le fait pas, on flood sa boîte mail avec des demandes)
+8. * Après service rendu, le demandeur peut (doit) noter le Wiking-> petite notification "n'oubliez pas de noter georges"
+	* Wiking -> demandeur: idem (rating aussi pour les demandeurs)
+	* s'il après une semaine toujours pas fait -> mail de rappel
+	* /!\ ce n'est que quand la prestation a été notée que l'argent est débité du compte.
 
 
 
