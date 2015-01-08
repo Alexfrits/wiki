@@ -3,7 +3,7 @@ Résumé
 ==
 
 nom		|			Thomas				|				Georges			|	Rita
-:----:|:-----------------:|:-----------------:|:---:
+:-----|:-----------------:|:-----------------:|:---:
 âge		|					26				|					47				|	33
 rôle	|				té					|				teur				|	teur
 matos	|	10chaises+3tables | 			idem				| plante verte
