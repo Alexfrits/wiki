@@ -8,7 +8,10 @@
 </head>
 <body>
   <header>
-    <h1><a href="#"><img src="img/wikings-logo.svg" alt="logo wikings" width="300" height="200"><strong>Wikings</strong></a></h1>
+    <h1><a href="index.html"><img src="img/wikings-logo.svg" alt="logo wikings" width="300" height="200"><strong>Wikings</strong></a></h1>
+    <div class="buttons--signin">
+      <a class="btn--connexion" href="signup.html">connexion</a>
+    </div>
   </header>
   <main>
     <form class="form--signup" action="mailto:m@i.l" name="form--signup" method="post">
@@ -37,12 +40,37 @@
           <li class="form--signup__field">
             <label for="owner">Possesseur de drakkar?</label>
             <input type="checkbox" name="owner" id="owner" checked>
-          <li class="form--signup__field">
-            <label for="eula">j'ai lu, compris et approuvé les <a class="inline-link" href="#">conditions d'utilisation</a></label>
-            <input type="checkbox" name="eula" id="eula">
         </ul>
       </fieldset>
-      <button class="btn--signup">Je veux en être!</button>
+      <fieldset>
+        <ul>
+          <li class="form--signup__field">
+            <label for="vehicle--1">type de transport</label>
+              <select name="vehicle--1" id="vehicle--1">
+                <option value="-1">choisir</option>
+                <option value="1">Remorque</option>
+                <option value="2">Camionnette</option>
+                <option value="3">Camion</option>
+                <option value="4">Vélo-cargo</option>
+                <option value="5">Tracteur</option>
+              </select>
+          <li class="form--signup__field">
+            <label for="volume">volume</label>
+            <input type="range" name="volume" id="volume">
+          <li class="form--signup__field">
+            <label for="weight">poids max</label>
+            <input type="range" name="weight" id="weight">
+          <li class="form--signup__field">
+            <label for="picture">Photo</label>
+            <input type="file" name="picture" id="picture" accept="image/jpeg, image/png">
+        </ul>
+      </fieldset>
+      <fieldset>
+        <li class="form--signup__field">
+            <label for="eula">j'ai lu, compris et approuvé les <a class="inline-link" href="#">conditions d'utilisation</a></label>
+            <input type="checkbox" name="eula" id="eula">
+        <button class="btn--signup">Je veux en être!</button>
+      </fieldset>
     </form>
   </main>
 </body>

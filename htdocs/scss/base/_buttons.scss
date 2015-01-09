@@ -2,7 +2,7 @@
   display: block;
   width: 40%;
   position: absolute;
-  background-color: $action-color;
+  background-color: $action-col;
   color: #fff;
   text-align: center;
 	border: 0;
@@ -15,12 +15,21 @@
 		padding: 1rem;
 	  font-size: 1.5rem;
 	  display: inline-block;
-	  width: 45%;
+	  width: 100%;
+
+	  @include mq($bp-med) {
+			width: 50%;
+	  }
+	}
+
+	&[class$=inscription] {
+		padding: 2rem;
+		margin-bottom: 1rem;
 	}
 
 	&[class$=connexion] {
-		color: $main-color;
-		background-color: $contr-color;
+		color: $main-col;
+		background-color: $contr-col;
 	}
 
 	&[class$=find] {

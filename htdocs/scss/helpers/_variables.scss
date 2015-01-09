@@ -1,6 +1,19 @@
-$main-color: hsl(11deg, 27%, 27%); //brown
-$sec-color: hsl(175deg, 30%, 95%); //ice-blue
-$action-color: hsl(356deg, 70%, 50%); //red
-$contr-color: hsl(185deg, 100%, 50%); //blue
+
+/* COLORS
+============================================================================*/
+
+$main-col: hsl(11deg, 27%, 27%);			//brown
+$main-col--dk: hsl(12deg, 28%, 28%);	//dark brown
+$sec-col: hsl(190deg, 22%, 84%);			//ice-blue
+$contr-col: hsl(33deg, 51%, 58%);		//ocher
+$contr-col--lt: hsl(40deg, 22%, 84%);	//light ocher
+$action-col: hsl(348deg, 73%, 55%);		//magenta
+
+
+/* BREAK POINTS
+============================================================================*/
 
 $bp-small: 480px;
+$bp-med: 768px;
+$bp-large: 992px;
+$bp-xl: 1200px;
