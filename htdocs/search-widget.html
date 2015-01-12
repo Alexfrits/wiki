@@ -1,0 +1,255 @@
+<script type="text/javascript">
+  function getSizeText(size) {
+
+    var ret = "Nothing";
+    if (size>0) {
+      ret='Ladder';
+    }
+    if (size>9) {
+      ret='Washing Machine * 2';
+    }
+    if (size>19) {
+      ret='Single Bed';
+    }
+    if (size>24) {
+      ret='Fridge + Washing Machine + Microwave + 4 Boxes';
+    }
+    if (size>29) {
+      ret='Washing Machine * 6';
+    }
+    if (size>34) {
+      ret='Double Bed';
+    }
+    if (size>37) {
+      ret='Washing Machine * 8';
+    }
+    if (size>39) {
+      ret='Contents of 1-bed flat';
+    }
+    if (size>64) {
+      ret='Contents of 2-bed House';
+    }
+    if (size>89) {
+      ret='Small Car';
+    }
+    if (size>119) {
+      ret='Large MPV vehicle';
+    }
+    if (size>139) {
+      ret='Medium Van';
+    }
+    if (size>149) {
+      ret='Long Van';
+    }
+    if (size>175) {
+      ret='Contents of 4-bed House';
+    }
+    if (size>199) {
+      ret='Contents of 5-bed House';
+    }
+    if (size>209) {
+      ret='Caravan';
+    }
+    if (size>299) {
+      ret='Boat';
+    }
+    if (size>399) {
+      ret='Caravan * 2';
+    }
+    if (size>449) {
+      ret='Small car * 5';
+    }
+    if (size>499) {
+      ret='Long Van * 3+';
+    }
+    if (size>749) {
+      ret='Small Plane';
+    }
+    if (size>899) {
+      ret='Boat * 3';
+    }
+    if (size>999) {
+      ret='Plane & Caravan';
+    }
+
+    return ret;
+  }
+
+function roundVal(val){
+  var dec = 1;
+  var result = Math.round(val*Math.pow(10,dec))/Math.pow(10,dec);
+  return result;
+}
+function setSizeText(sizeFrom,sizeTo)
+{
+  mtFrom = sizeFrom * 0.3048;
+  mtTo = sizeTo * 0.3048;
+  jQuery('#ft_mt_conversion').html('('+roundVal(mtFrom)+' to '+roundVal(mtTo)+'m&sup2;)');
+  jQuery("#space_from_text").html(getSizeText(sizeFrom));
+  jQuery("#space_to_text").html(getSizeText(sizeTo));
+}
+  
+jQuery(document).ready(function(){
+  try {
+    // value sliders for advanced search
+    jQuery("#sms_slider").slider({ // size
+       orientation:'horizontal',
+       animate:false,
+       max:500,
+       min:0,
+       range:true,
+       step:10,
+       //value:50
+       values:[0,500],
+       //slide: function( event, ui ) {
+      //    $( "#amount" ).val( "$" + ui.value );
+      //}
+      slide: function( event, ui ) {
+          jQuery( "#size_from" ).val( ui.values[0] );
+          jQuery( "#size_to" ).val( ui.values[1] );
+          
+          setSizeText(ui.values[0], ui.values[1]);
+      }
+    });
+    jQuery( "#size_from" ).val( jQuery( "#sms_slider" ).slider( "values", 0 ) );
+    jQuery( "#size_to" ).val( jQuery( "#sms_slider" ).slider( "values", 1 ) );
+    setSizeText(0, 500);
+
+    jQuery("#sms_slider_cost").slider({
+       orientation:'horizontal',
+       animate:false,
+       max:300,
+       min:0,
+       range:true,
+       step:10,
+       //value:50
+       values:[0,1000],
+       //slide: function( event, ui ) {
+      //    $( "#amount" ).val( "$" + ui.value );
+      //}
+      slide: function( event, ui ) {
+          jQuery( "#price_from" ).val( ui.values[ 0 ] );
+          jQuery( "#price_to" ).val( ui.values[ 1 ] );
+      }
+    });
+    jQuery( "#price_from" ).val( jQuery( "#sms_slider_cost" ).slider( "values", 0 ) );
+    jQuery( "#price_to" ).val( jQuery( "#sms_slider_cost" ).slider( "values", 1 ) );
+
+  } catch(err) {
+    // do nothing
+  }
+});
+
+</script>
+    
+    <div id="advanced_search_left_col" style="width:675px;float:left;">
+    <table id="advanced_search_options_table_header" cellpadding="0" cellspacing="0">
+      <tr>
+        <td>
+          <label for="location">where</label>
+    
+          <input class="inputbox text_area" value="Where do you need storage space?" type="text" name="location" id="location" size="50" style="width:270px;" />
+        </td>
+        <td>
+          <label for="distance">&nbsp;&nbsp;&nbsp;distance</label>
+      
+          <select name="distance" class="inputbox text_area" size="1">
+            <option value="0">No distance set</option>
+            <option value="0.5" >500 metres</option>
+            <option value="1" >1km</option>
+            <option value="5" >5km</option>
+            <option value="10" >10km</option>
+            <option value="25" >25km</option>
+            <option value="50" >50km</option>
+            <option value="150" >150km</option>
+            <option value="300" >300km</option>
+            <option value="0">National</option>
+          </select>
+        </td>
+        <td>
+          &nbsp;<!-- expanding column -->
+
+
+
+          <!--input class="inputbox text_area" type="text" name="cf35" id="cf35" size="30"-->
+
+
+
+          <b>type</b>
+          <select name="cf35" id="cf35" class="inputbox text_area" size="1">
+  <option value="none" >Please select...</option>
+  <option value="Garage" >Garage</option>
+  <option value="Attic" >Attic</option>
+  <option value="Basement" >Basement</option>
+  <option value="Spare Room" >Spare Room</option>
+  <option value="Shed / Barn" >Shed / Barn</option>
+  <option value="Beach Hut" >Beach Hut</option>
+  <option value="Commercial" >Commercial</option>
+  <!--option value="-">Other (please specify)</option-->
+</select>
+
+
+
+        </td>
+      </tr>
+    </table>
+    <table id="advanced_search_options_table">
+      <tr>
+        <td>
+          <label for="sms_slider">size </label>
+        </td>
+        <td colspan="6">
+          <div id="slider_container">
+
+            <div id="slider_widget">
+
+              <div id="sms_slider_container">
+                <div id="sms_slider">&nbsp;</div>
+              </div>
+            </div>
+            <div id="slider_widget_text">
+              
+              <div style="width:180px;text-align:right;float:left;">
+              <span>from </span>
+              <input type="text" id="size_from" name="size_from" class="inputbox" style="width:50px;"/>
+              <span> to </span>
+              <input type="text" id="size_to" name="size_to" class="inputbox" style="width:50px;" />
+              </div>
+              <div style="float:left;height:20px;padding:3px 0 0 3px;">sq ft <span id="ft_mt_conversion"></span></div>
+          </div>
+          </div>
+
+
+        </td>
+      </tr>
+      <tr>
+        <td>
+          <label for="sms_slider_cost">cost </label>
+        </td>
+        <td colspan="6">
+          <div id="slider_cost_container">
+
+            <div id="slider_cost_widget">
+
+              <div id="sms_slider_cost_container">
+                <div id="sms_slider_cost">&nbsp;</div>
+              </div>
+            </div>
+            <div id="slider_cost_widget_text">
+              <div style="width:180px;text-align:right;float:left;">
+              <span>from &pound;</span>
+              <input type="text" id="price_from" name="price_from" class="inputbox" style="width:50px;"/>
+              <span> to </span>
+              <input type="text" id="price_to" name="price_to" class="inputbox" style="width:50px;" />
+              </div>
+
+              <div style="float:left;width:130px;height:20px;padding:3px 0 0 3px;">show unavailable? <input type="checkbox" name="show_unavailable" value="1" /></div>
+
+            </div>
+          </div>
+
+
+        </td>
+      </tr>
+    </table>
+  </div>
