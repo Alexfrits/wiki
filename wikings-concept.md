@@ -70,7 +70,7 @@ Les Wikings sont une grande famille: ce qui commence par un échange de service 
 
 4. /!\ il faut être inscrit/loggé (donc avoir accepté les conditions d'utilisation) pour avoir accès aux infos des transporteurs [passage à l'étape inscription si pas faite d'entrée de jeu]
 
-5. envoi auto du message avec les infos mentionnées au-dessus -> annonceur confirme (sinon : proposition autres options)
+5. envoi auto du message avec les infos mentionnées au-dessus -> annonceur confirme (sinon : proposition autres options. Si, après quelques jours, personne ne répond, il reçoit un message lui disant que ça requête n'a pas abouti.)
 
 6. envoi second message avec les dates et heures -> annonceur confirme (sinon : peut proposer autre date/heure)
 
