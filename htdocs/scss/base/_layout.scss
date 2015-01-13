@@ -1,7 +1,7 @@
 
-body {
-  //background-color: $sec-col;
-}
+/*============================================================================
+GENERAL 
+============================================================================*/
 
 main {
   @include mq($bp-large) {
@@ -11,8 +11,6 @@ main {
 }
 
 h2 {
-  font-size: 3rem;
-  text-transform: uppercase;
   margin-bottom: 1.5rem;
 }
 
@@ -21,12 +19,18 @@ legend {
 }
 
 a.inline-link {
-  color: $action-col; 
 }
 
-/*============================================================================
-INDEX 
-============================================================================*/
+
+// form select resetter
+select {
+  border: none;
+  border-radius: 0;
+}
+
+p {
+  font-size: 1.6rem;
+}
 
 
 
@@ -36,27 +40,49 @@ INDEX
 header {
   position: relative;
   padding: 4rem 0;
-  background-color: $main-col;
   text-transform: uppercase;
+  margin-bottom: 5rem;
+
+  @include mq($bp-med) {
+    padding: 2rem;
+  }
 
   h1 {
     text-align: center;
-    max-width: 120px;
-    width: 100%;
     height: auto;
-    margin: 0 auto 1rem;
+    margin: 0 auto 3rem;
+
+    @include mq($bp-med) {
+      display: inline-block;
+      width: 50%;
+    }
 
     a {
-      color: #fff;
     }
 
     img {
-      width: 100%;
+      width: 37%;
       height: auto;
+
+      @include mq($bp-small) {
+        width: 20%;
+      }
+
+      @include mq($bp-med) {
+        display: none;
+      }
     }
 
     strong {
       display: block;
+
+      @include mq($bp-med) {
+        font: 0/0 a;
+        color: rgba(255, 255, 255, 0);
+        width: 50%;
+        height: 0;
+        padding-top: 10%;
+      }
     }
   }
 
@@ -67,28 +93,49 @@ header {
       width: 80%;
       margin: 0 auto;
     }
-  }
 
-
-  @include mq($bp-med) {
-    h1,
-    .buttons--signin {
+    @include mq($bp-med) {
       display: inline-block;
+      width: 50%;
+      position: initial;
+      right: initial;
+      top: initial;
+      transform: initial;
+      text-align: right;
     }
-
-    h1 {
-      //width: 25%;
-      // float: left;
-    }
-
-    .buttons--signin {
-      position: absolute;
-      right: 0;
-      //width: 40%;
-      // float: right;
+    
+    li {
+      @include mq($bp-med) {
+        display: inline-block;
+        width: calc(50% - 1rem);
+      }
     }
   }
 }
+
+
+/* FOOTER
+============================================================================*/
+
+footer {
+  text-align: center;
+  padding: 3rem 0;
+  .copyright {
+    
+  }
+
+  .eula {
+
+    a {
+
+    }
+  }
+}
+
+
+/*============================================================================
+INDEX 
+============================================================================*/
 
 
 /* WIKING FINDER
@@ -96,65 +143,118 @@ header {
 
 .wiking-finder {
   max-width: 54rem;
-  margin: 0 auto;
+  margin: 0 auto 35rem;
+  position: relative;
 }
 
 .form-search {
-  display: block;
-  position: relative;
-  margin-top: 3rem;
-  padding: 0 3rem 4rem;
-  background-color: $sec-col;
+  padding-bottom: 3rem;
+
+  
+
+  @include mq($bp-small) {
+    padding: 0 3rem 8rem;
+  }
 
   h2 {
-    margin: 0 -3rem 2rem;
+    margin-bottom: 2rem;
     padding: 2rem 3rem;
-    background-color: $main-col;
-    color: #fff;
 
+    @include mq($bp-small) {
+      margin: 0 -3rem 2rem;
+    }
   }
 
   .form-search__field {
     display: inline-block;
     width: 100%;
-    margin-bottom: 3rem;
-    padding: 2rem;
-    background-color: #fff;
+    margin-bottom: 1.5rem;
+
+    @include mq($bp-small) {
+      padding: 1rem 2rem;
+    }
+
+    label {
+      padding-left: .5rem;
+      margin-bottom: 2rem;
+    }
 
     input {
+      padding: 1rem 1rem 1rem 2rem;
       border: none;
+      border-radius: 2.5rem;
     }
   }
 }
 
 .results--languettes {
-  margin: 0 auto;
-  transform: rotate(-90deg);
-  transform-origin: 40% 45%;
-  width: 200px;
+  position: absolute;
+  bottom: 0;
+  text-align: right;
+  width: 25rem;
+  transform-origin: 0% 100%;
+  transform:rotate(-90deg)
+            translateX(calc(-100% - 1rem))
+            translateY(100%);
 
 
   .languette {
-    background-color: $sec-col;
     display: block;
     padding: 2rem;
+    margin-bottom: 1rem;
     width: 100%;
   }
+
+  //showing the right amount of languettes per screen width
+
+  .hidden {
+    display: none;
+  }
+
+  @include mq($bp-small) {
+    .show-small {
+      display: block;
+    }
+  }
+
+  @include mq($bp-med) {
+    .show-med {
+      display: block;
+    }
+  }
+
+  // @include mq($bp-large) {
+  //   .show-large {
+  //     display: block;
+  //   }
+  // }
+
+  // @include mq($bp-xl) {
+  //   .show-xl {
+  //     display: block;
+  //   }
+  // }
 }
+
+
 
 /* DEFINITION
 ============================================================================*/
 
 .definition {
-  background-color: $main-col;
-  color: #fff;
-  padding: 2rem 3rem;
-  margin-bottom: 2rem;
+  padding: 2rem .5rem;
+  margin-bottom: 8rem;
+
+  dfn {
+
+  }
+
+  @include mq($bp-small) {
+    padding: 2rem 3rem;
+  }
 
   p {
-
     a {
-      color: $contr-col;
     }
   }
 }
@@ -170,11 +270,31 @@ header {
     margin: 0 auto;
   }
 
+  h2 {
+    padding-bottom: 1rem;
+    margin-bottom: 2rem;
+  }
+
   .results_vignette {
     position: relative;
-    padding: 2rem 2rem 5rem;
-    background-color: $sec-col;
-    margin-bottom: 2rem;
+    padding-bottom: 2rem;
+
+    @include mq($bp-small) {
+      margin-bottom: 2rem;
+      padding-bottom: 4rem;
+    }
+
+    p {
+      padding: 1rem;
+    }
+
+    .results__name {
+      display: block;
+
+      @include mq($bp-small) {
+        display: inline;
+      }
+    }
 
     @include mq($bp-small) {
       display: inline-block;
@@ -197,9 +317,14 @@ header {
   }
 
   img {
+    display: none;
     width: 100%;
     height: auto;
     margin-bottom: 1rem;
+
+    @include mq($bp-small) {
+      display: initial;
+    }
   }
 }
 
@@ -211,12 +336,10 @@ SIGNUP PAGE
 
 .form--signup {
   padding: 2rem 2rem 5rem;
-  background-color: $sec-col;
   max-width: 52rem;
   margin: 0 auto;
 
   .form--signup__field {
-    background-color: #fff;
     padding: 2rem 1rem; 
     margin-bottom: 2rem;
     input {
@@ -252,7 +375,6 @@ MEMBER SEARCH
 
 .id-card {
   text-align: center;
-  background-color: $sec-col;
   padding: 2rem;
   margin-bottom: 3rem;
 
@@ -304,10 +426,8 @@ MEMBER SEARCH
 
 .comments {
   padding: 0 1rem 1rem;
-  background-color: $sec-col;
 
   .comments__post {
-    background-color: #fff;
 
     img {
       width: 20%;

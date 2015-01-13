@@ -2,26 +2,29 @@
 <html lang="fr">
 <head>
 	<meta charset="utf-8">
+  <link href='http://fonts.googleapis.com/css?family=Titillium+Web:400,200,200italic,300,300italic,400italic,700,700italic,900' rel='stylesheet' type='text/css'>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<link rel="stylesheet" type="text/css" href="css/main.css">
 	<title>Wikings | Transport de marchandises communautaire</title>
 </head>
 <body>
   <header>
-    <h1><a href="#"><img src="img/wikings-logo.svg" alt="logo wikings" width="300" height="200"><strong>Wikings</strong></a></h1>
-    <ul class="buttons--signin">
+    <h1><a href="#"><img src="img/wikings-logo-small.svg" alt="logo wikings" width="300" height="200"><strong>Wikings</strong></a></h1><!-- 
+     --><ul class="buttons--signin">
     <li><a class="btn--inscription" href="signup.html">Devenir Wiking</a>
     <li><a class="btn--connexion" href="signup.html">connexion</a>
     </ul>
   </header>
   <main>
   <section class="wiking-finder">
-    <form class="form-search" action="mailto:m@i.l" name="form__booking" method="get">
-    <h2>taille de votre butin</h2>
+    <form class="form-search" action="mailto:m@i.l" name="form-search" method="get">
+    <h2>Taille de ton butin</h2>
       <fieldset>
         <legend>type d'objet</legend>
         <ul>
-          <li class="form-search__field">
+          <!-- version with selects
+
+           <li class="form-search__field">
             <label for="objet--1">entre</label>
               <select name="objet--1" id="objet--1">
                 <option value="1">1</option>
@@ -47,7 +50,14 @@
                 <option value="7">7</option>
                 <option value="8">8</option>
                 <option value="9">9</option>
-              </select>
+              </select> -->
+              <li class="form-search__field">
+            <label for="objet--1">entre</label>
+              <input type="range" name="objet--1" id="objet--1">
+
+          <li class="form-search__field">
+            <label for="objet--2">et</label>
+              <input type="range" name="objet--2" id="objet--2">
         </ul>
       </fieldset>
       <fieldset>
@@ -67,49 +77,53 @@
         <button class="btn--find">trouve ton drakkar</button>
     </form>
     <ul class="results--languettes">
-      <li class="languette"><a href="member-search.html"><strong>Georges</strong> a une <em>remorque</em> à 5km</a>
-      <li class="languette"><a href="member-search.html"><strong>Georges</strong> a une <em>remorque</em> à 5km</a>
-      <li class="languette"><a href="member-search.html"><strong>Georges</strong> a une <em>remorque</em> à 5km</a>
-      <li class="languette"><a href="member-search.html"><strong>Georges</strong> a une <em>remorque</em> à 5km</a>
+      <li class="languette"><a href="member-search.html"><span class="bold">Georges</span> a une <em>remorque</em> à <span class="lenght">5km</span>.</a>
+      <li class="languette"><a href="member-search.html"><span class="bold">Georges</span> a une <em>remorque</em> à <span class="lenght">5km</span>.</a>
+      <li class="languette hidden show-small"><a href="member-search.html"><span class="bold">Georges</span> a une <em>remorque</em> à <span class="lenght">5km</span>.</a>
+      <li class="languette hidden show-small"><a href="member-search.html"><span class="bold">Georges</span> a une <em>remorque</em> à <span class="lenght">5km</span>.</a>
+      <li class="languette hidden show-med"><a href="member-search.html"><span class="bold">Georges</span> a une <em>remorque</em> à <span class="lenght">5km</span>.</a>
       <li class="languette"><a href="#results--more">plus de drakkars</a>
     </ul>
     </section>
     <article class="definition">
     <h2>Qu'est-ce que Wikings?</h2>
-      <p><dfn>Wikings</dfn> met en relation les personnes qui ont besoin d'un véhicule pour transporter un objet/matériau/… trop lourd ou volumineux et ceux qui ont ce type de transport et qui peuvent le mettre à disposition en échange d'une petite compensation.
-      <a href="#">Découvrez comment…</a></p>
+      <p><dfn>Wikings</dfn> met en relation les particuliers qui ont besoin d'un utilitaire pour transporter un objet/matériau/… trop lourd ou volumineux et ceux qui ont ce type de transport et qui peuvent le mettre en location en échange d'une petite compensation.
+      <a href="#">Découvrez notre philosophie</a></p>
     </article>
-
     <section class="results--more">
     <h2>tous les drakkars</h2>
     <ul id="results--more">
       <li class="results_vignette">
-        <a href="member-search.html"><img src="http://placekitten.com/g/600/400" width="300" height="200" alt="la remorque de Georges"></a>
-        <p><strong>Georges</strong> a une <em>remorque</em> à 5km</p>
+        <a href="member-search.html"><img src="img/remorque-dbl-essieux.jpg" width="528" height="396" alt="remorque double essieux"></a>
+        <p><span class="results__name">Georges</span> a une <em>remorque</em> à <span class="lenght">5km</span>.</p>
         <a href="member-search.html" class="btn--voir">voir</a>
       <li class="results_vignette">
-        <a href="member-search.html"><img src="http://placekitten.com/g/600/400" width="300" height="200" alt="la remorque de Georges"></a>
-        <p><strong>Georges</strong> a une <em>remorque</em> à 5km</p>
+        <a href="member-search.html"><img src="img/camionnette.jpg" width="400" height="300" alt="camionnette blanche"></a>
+        <p><span class="results__name">Georges</span> a une <em>camionnette</em> à <span class="lenght">5km</span>.</p>
         <a href="member-search.html" class="btn--voir">voir</a>
       <li class="results_vignette">
-        <a href="member-search.html"><img src="http://placekitten.com/g/600/400" width="300" height="200" alt="la remorque de Georges"></a>
-        <p><strong>Georges</strong> a une <em>remorque</em> à 5km</p>
+        <a href="member-search.html"><img src="http://placekitten.com/g/600/400" width="400" height="300" alt="la remorque de Georges"></a>
+        <p><span class="results__name">Georges</span> a une <em>remorque</em> à <span class="lenght">5km</span>.</p>
         <a href="member-search.html" class="btn--voir">voir</a>
       <li class="results_vignette">
-        <a href="member-search.html"><img src="http://placekitten.com/g/600/400" width="300" height="200" alt="la remorque de Georges"></a>
-        <p><strong>Georges</strong> a une <em>remorque</em> à 5km</p>
+        <a href="member-search.html"><img src="http://placekitten.com/g/800/600" width="400" height="300" alt="la remorque de Georges"></a>
+        <p><span class="results__name">Georges</span> a une <em>remorque</em> à <span class="lenght">5km</span>.</p>
         <a href="member-search.html" class="btn--voir">voir</a>
       <li class="results_vignette">
-        <a href="member-search.html"><img src="http://placekitten.com/g/600/400" width="300" height="200" alt="la remorque de Georges"></a>
-        <p><strong>Georges</strong> a une <em>remorque</em> à 5km</p>
+        <a href="member-search.html"><img src="http://placekitten.com/g/800/600" width="400" height="300" alt="la remorque de Georges"></a>
+        <p><span class="results__name">Georges</span> a une <em>remorque</em> à <span class="lenght">5km</span>.</p>
         <a href="member-search.html" class="btn--voir">voir</a>
       <li class="results_vignette">
-        <a href="member-search.html"><img src="http://placekitten.com/g/600/400" width="300" height="200" alt="la remorque de Georges"></a>
-        <p><strong>Georges</strong> a une <em>remorque</em> à 5km</p>
+        <a href="member-search.html"><img src="http://placekitten.com/g/800/600" width="400" height="300" alt="la remorque de Georges"></a>
+        <p><span class="results__name">Georges</span> a une <em>remorque</em> à <span class="lenght">5km</span>.</p>
         <a href="member-search.html" class="btn--voir">voir</a>
 
     </ul>
   </section>
   </main>
+  <footer>
+    <p class="copyright">©2015 Alexandre Frits</p>
+    <p class="eula">lisez nos <a href="#"> conditions d'utilisation</a></p>
+  </footer>
 </body>
 </html>

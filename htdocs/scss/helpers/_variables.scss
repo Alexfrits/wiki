@@ -2,12 +2,25 @@
 /* COLORS
 ============================================================================*/
 
-$main-col: hsl(11deg, 27%, 27%);			//brown
-$main-col--dk: hsl(12deg, 28%, 28%);	//dark brown
-$sec-col: hsl(190deg, 22%, 84%);			//ice-blue
-$contr-col: hsl(33deg, 51%, 58%);		//ocher
-$contr-col--lt: hsl(40deg, 22%, 84%);	//light ocher
-$action-col: hsl(348deg, 73%, 55%);		//magenta
+$main-col: hsl(11deg, 27%, 27%);					//brown
+$main-col--dk: hsl(12deg, 28%, 18%);			//dark brown
+$sec-col: hsl(200deg, 53%, 48%);					//blue
+$sec-col--lt: hsl(190deg, 22%, 84%);			//ice-blue
+$sec-col--dk: hsl(223deg, 50%, 20%);			//dark blue
+$sec-col--fluo: hsl(170deg, 60%, 69%);		//bright blue
+$contr-col: hsl(33deg, 51%, 58%);					//ocher
+$contr-col--lt: hsl(40deg, 48%, 84%);			//light ocher
+$action-col: hsl(348deg, 73%, 55%);				//magenta
+
+
+/* SHADOWS
+============================================================================*/
+
+$shadow: 1px 4px 10px -2px; 							// offset and blur of the shadow
+$shadow--languettes: -4px 1px 10px -2px;	// rotated shadow for laguettes
+
+
+
 
 
 /* BREAK POINTS
@@ -17,3 +30,15 @@ $bp-small: 480px;
 $bp-med: 768px;
 $bp-large: 992px;
 $bp-xl: 1200px;
+
+/* FONT STACK
+============================================================================*/
+
+
+$titillium: 'Titillium Web', 'Helvetica Narrow', 'Arial Narrow', sans-serif;
+
+// Extra-Light 		200 (Italic)
+// Light 					300 (Italic)
+// Normal 				400 (Italic)
+// Bold 					700 (Italic)
+// Ultra-Bold 		900

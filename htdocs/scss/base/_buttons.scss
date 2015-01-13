@@ -2,10 +2,13 @@
   display: block;
   width: 40%;
   position: absolute;
-  background-color: $action-col;
+  background-color: $sec-col--fluo;
+  box-shadow: $shadow $sec-col--dk;
   color: #fff;
   text-align: center;
 	border: 0;
+	font-size: 1.4rem;
+	border-radius: 2.8rem;
 
 
 
@@ -13,18 +16,19 @@
 	&[class$=connexion] {
 		position: initial;
 		padding: 1rem;
-	  font-size: 1.5rem;
+	  font-size: 2.4rem;
 	  display: inline-block;
-	  width: 100%;
-
-	  @include mq($bp-med) {
-			width: 50%;
-	  }
+		width: initial;
+	  box-shadow: $shadow $main-col--dk;	
 	}
 
 	&[class$=inscription] {
-		padding: 2rem;
 		margin-bottom: 1rem;
+
+		@include mq($bp-med) {
+			margin-bottom: 0;
+			margin-right: 2rem;
+		}
 	}
 
 	&[class$=connexion] {
@@ -34,23 +38,35 @@
 
 	&[class$=find] {
 		padding: 1rem;
-	  bottom: 1rem;
-	  right: 3rem;
-	  width: 50%;
-	  max-width: 15rem;
+		position: initial;
+		width: 100%;
+		font-size: 2rem;
+
+		@include mq($bp-small) {
+			position: absolute;
+		  bottom: 2rem;
+		  right: 5rem;
+		  width: 40%;
+		}
 	}
 
 	&[class$=voir] {
-	  padding: 1rem;
-	  bottom: 1rem;
-	  right: 2rem;
-	  font-size: 1.4rem;
+		position: initial;
+		width: 100%;
+		padding: 1rem;
+
+		@include mq($bp-small) {
+			position: absolute;
+			width: 40%;
+		  padding: 1rem;
+	 		bottom: 1rem;
+	  	right: 1rem;
+		}
 	}
 
 	&[class$=signup] {
 		padding: 1rem;
 		width: 50%;
 		max-width: 30rem;
-		font-size: 1.4rem;
 	}
 }

@@ -1,0 +1,348 @@
+// Colors, background, decorations, hover, focus…
+
+
+/*============================================================================
+GENERAL 
+============================================================================*/
+
+body {
+  background-color: $sec-col--lt;
+}
+
+main {
+}
+
+h2 {
+  color: $sec-col;
+}
+
+legend {
+}
+
+a.inline-link {
+  color: $action-col; 
+}
+
+
+// form select resetter
+select {
+  background-color: #fff;
+}
+
+p {
+}
+
+
+
+/* HEADER
+============================================================================*/
+
+header {
+  background-color: $main-col;
+  box-shadow: $shadow $sec-col--dk;
+
+  @include mq($bp-med) {
+  }
+
+  h1 {
+
+    @include mq($bp-med) {
+    }
+
+    a {
+      color: #fff;
+    }
+
+    img {
+
+      @include mq($bp-small) {
+      }
+
+      @include mq($bp-med) {
+      }
+    }
+
+    strong {
+
+      @include mq($bp-med) {
+        background:transparent url(../img/wikings-logo-full.svg) 50% 50% no-repeat;
+        background-size: 100%;
+      }
+    }
+  }
+
+  .buttons--signin {
+
+    @include mq($bp-small) {
+    }
+
+    @include mq($bp-med) {
+    }
+    
+    li {
+      @include mq($bp-med) {
+      }
+    }
+  }
+}
+
+/* FOOTER
+============================================================================*/
+
+footer {
+  background-color: $main-col;
+  color: $contr-col--lt;
+
+  
+  .copyright {
+    
+  }
+
+  .eula {
+
+    a {
+      color: $sec-col--fluo;
+
+    }
+  }
+}
+
+/*============================================================================
+INDEX 
+============================================================================*/
+
+
+/* WIKING FINDER
+============================================================================*/
+
+.wiking-finder {
+}
+
+.form-search {
+  background-color: #fff;
+  box-shadow: $shadow $sec-col--dk; 
+
+  @include mq($bp-small) {
+  }
+
+  h2 {
+    background-color: $sec-col;
+    color: #fff;
+  }
+
+  .form-search__field {
+
+    label {
+      color: $sec-col--dk;
+    }
+
+    input {
+      background-color: $sec-col--lt;
+
+      &:hover,
+      &:focus {
+        outline: none;
+        box-shadow: $shadow $sec-col--dk;
+      }
+    }
+  }
+}
+
+.results--languettes {
+
+  a {
+    color: $sec-col--lt;
+  }
+
+  // &:last-child {
+  //   a {
+  //     color: #fff;
+  //   }
+  // }
+
+  .languette {
+    background-color: #fff;
+    box-shadow: $shadow--languettes $sec-col--dk;
+
+    &:last-of-type {
+      background-color: $sec-col--fluo;
+    }
+
+    .bold,
+    em {
+      color: $sec-col--dk;
+    }
+
+    .lenght {
+      color: $contr-col;
+    }
+  }
+}
+
+
+/* DEFINITION
+============================================================================*/
+
+.definition {
+  background-color: $main-col;
+  color: #fff;
+  box-shadow: $shadow $sec-col--dk;
+
+  h2 {
+    color: $contr-col--lt;
+  }
+
+  @include mq($bp-small) {
+  }
+
+  p {
+    a {
+      color: $contr-col;
+    }
+  }
+}
+
+
+/* ALL RESULTS
+============================================================================*/
+
+.results--more {
+
+  h2 {
+    border-bottom: 1px solid $sec-col--dk;
+  }
+
+
+  .results_vignette {
+    background-color: $sec-col;
+    color: $sec-col--dk;
+    border-bottom: 1px solid $sec-col--dk;
+    box-shadow: $shadow $sec-col--dk;
+
+    .results__name {
+      color: #fff;
+    }
+
+    em {
+      color: #fff;
+    }
+
+    .lenght {
+
+    }
+
+    @include mq($bp-small) {
+
+      border:none;
+
+      &:nth-child(odd) {
+      }
+    }
+
+    @include mq($bp-med) {
+
+      &:nth-child(3n) {
+      }
+    }
+  }
+
+  img {
+
+    @include mq($bp-small) {
+    }
+  }
+}
+
+
+/*============================================================================
+SIGNUP PAGE 
+============================================================================*/
+
+
+.form--signup {
+  background-color: $sec-col;
+
+  .form--signup__field {
+    background-color: #fff;
+
+    input {
+    }
+  }
+
+}
+
+
+/*============================================================================
+MEMBER SEARCH 
+============================================================================*/
+
+.id-card,
+.vehicles,
+.comments h2,
+.comments__post {
+
+  @include mq($bp-small) {
+  }
+}
+
+.id-card,
+.vehicles {
+
+  @include mq($bp-large) {
+  }
+}
+
+.id-card {
+  background-color: $sec-col;
+
+  @include mq($bp-large) {
+  }
+
+  img {
+
+    @include mq($bp-large) {
+    }
+  }
+}
+
+
+.vehicles {
+
+  @include mq($bp-large) {
+  }
+
+  li {
+
+    @include mq($bp-med) {
+
+      &:nth-child(odd) {     
+      }
+    }
+  }
+
+  img {
+  }
+}
+
+.comments {
+  background-color: $sec-col;
+
+  .comments__post {
+    background-color: #fff;
+
+    img {
+    }
+
+    p {
+    }
+  }
+}
+
+
+
+
+
+
+
+
+
